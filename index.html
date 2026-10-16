@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kit Berçário em Ação · 200 Atividades Prontas Alinhadas à BNCC</title>
+<meta name="description" content="200 fichas de atividades prontas para o berçário, alinhadas à BNCC, organizadas por faixa etária e com registro para o relatório.">
+<!-- COLE AQUI O PIXEL DO META / SCRIPT DA UTMIFY -->
+<style>
+@font-face{font-family:Nunito;font-weight:400;font-display:swap;src:url(fonts/nunito-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Nunito;font-weight:700;font-display:swap;src:url(fonts/nunito-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Nunito;font-weight:800;font-display:swap;src:url(fonts/nunito-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:"Baloo 2";font-weight:800;font-display:swap;src:url(fonts/baloo-2-latin-800-normal.woff2) format("woff2")}
+:root{
+  --ink:#2f2b3d;--muted:#6b6580;--rosa:#e8547a;--rosa-s:#fde4ea;--lilas:#8357d6;--lilas-s:#efe7fd;
+  --azul:#2f8fbf;--azul-s:#e2f2fb;--verde:#3f9a2a;--verde-s:#e9f6e2;--amarelo:#f6b40f;--creme:#fffaf5;
+  --cta:#22a35a;--cta-d:#178046;--r:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Nunito,system-ui,sans-serif;color:var(--ink);background:var(--creme);line-height:1.55;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+.narrow{max-width:760px}
+h1,h2,h3{font-family:"Baloo 2",Nunito,sans-serif;font-weight:800;line-height:1.08;letter-spacing:-.3px}
+h2{font-size:clamp(28px,5.2vw,42px);text-align:center;margin-bottom:14px}
+.sub{text-align:center;color:var(--muted);font-size:18px;max-width:640px;margin:0 auto 34px}
+section{padding:64px 0}
+.hl{color:var(--rosa)}
+.mark{background:linear-gradient(transparent 58%,#ffe08a 58%);padding:0 3px}
+
+/* barra topo */
+.topbar{background:var(--lilas);color:#fff;text-align:center;font-weight:800;font-size:14px;padding:9px 12px;letter-spacing:.2px}
+
+/* hero */
+.hero{padding:42px 0 56px;background:radial-gradient(circle at 85% 10%,#fde4ea 0,transparent 42%),radial-gradient(circle at 5% 80%,#e2f2fb 0,transparent 40%)}
+.hero .grid{display:flex;flex-direction:column;align-items:center;text-align:center;max-width:860px}
+.hero .copy{display:contents}
+.hero .tag{order:1}.hero h1{order:2}.hero .lead{order:3;max-width:680px;margin-left:auto;margin-right:auto}.hero .mock{order:4;margin:10px auto 34px}.hero .checks{order:5}.hero .btn{order:6}.hero .safe{order:7;justify-content:center}
+.hero .checks{justify-content:center;text-align:left}
+.tag{display:inline-flex;gap:8px;align-items:center;background:#fff;border:2px solid var(--lilas-s);color:var(--lilas);font-weight:800;font-size:14px;padding:6px 14px;border-radius:99px;margin-bottom:18px}
+.hero h1{font-size:clamp(34px,6.4vw,58px);margin-bottom:18px}
+.hero p.lead{font-size:clamp(18px,2.4vw,21px);color:var(--muted);margin-bottom:22px}
+.checks{list-style:none;display:grid;gap:9px;margin-bottom:28px}
+.checks li{display:flex;gap:10px;font-weight:700}
+.checks li::before{content:"✓";flex:0 0 24px;height:24px;border-radius:50%;background:var(--verde-s);color:var(--verde);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;margin-top:1px}
+
+.btn{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:var(--cta);color:#fff;font-weight:800;font-size:19px;text-decoration:none;padding:19px 30px;border-radius:16px;box-shadow:0 6px 0 var(--cta-d),0 14px 30px rgba(34,163,90,.25);transition:transform .12s,box-shadow .12s;text-align:center;width:100%;max-width:460px}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 var(--cta-d)}
+.btn small{display:block;font-size:13px;font-weight:700;opacity:.9;margin-top:2px}
+.safe{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px;font-size:14px;color:var(--muted);font-weight:700}
+
+/* mockup */
+.mock{position:relative;height:520px;max-width:470px;margin:0 auto;width:100%}
+.mockimg{height:auto!important;max-width:560px!important;border-radius:28px;box-shadow:0 24px 60px rgba(47,43,61,.18)}
+.mock .sheet{position:absolute;width:56%;border-radius:14px;box-shadow:0 18px 40px rgba(47,43,61,.18);background:#fff}
+.mock .s1{left:0;top:40px;transform:rotate(-8deg)}
+.mock .s2{right:0;top:30px;transform:rotate(7deg)}
+.tablet{position:absolute;left:50%;top:0;transform:translateX(-50%);width:66%;background:#2f2b3d;border-radius:30px;padding:12px;box-shadow:0 30px 60px rgba(47,43,61,.3)}
+.tablet img{border-radius:20px}
+.tablet::before{content:"";position:absolute;top:5px;left:50%;width:6px;height:6px;margin-left:-3px;border-radius:50%;background:#55506a}
+.badge{position:absolute;background:#fff;border-radius:16px;padding:10px 14px;font-weight:800;font-size:14px;box-shadow:0 10px 26px rgba(47,43,61,.15);display:flex;gap:8px;align-items:center}
+.b1{left:-6px;bottom:70px}.b2{right:-6px;bottom:22px}
+.badge b{font-size:22px;color:var(--rosa);font-family:"Baloo 2"}
+
+/* dores */
+.dores{background:#fff}
+.dor-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:880px;margin:0 auto}
+.dor{background:var(--rosa-s);border-radius:18px;padding:18px 20px;display:flex;gap:12px;font-weight:700}
+.dor::before{content:"✕";flex:0 0 28px;height:28px;border-radius:50%;background:#fff;color:var(--rosa);display:flex;align-items:center;justify-content:center;font-weight:800}
+.ponte{text-align:center;font-size:21px;font-weight:800;margin-top:34px}
+
+/* o que é */
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.fcard{background:#fff;border-radius:var(--r);padding:26px 22px;border:2px solid #f1ecf7}
+.fcard .ic{width:54px;height:54px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:14px}
+.fcard h3{font-size:22px;margin-bottom:6px}
+.fcard p{color:var(--muted);font-size:16px}
+.faixas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.faixa{background:#fff;border:2px dashed var(--lilas);color:var(--lilas);font-weight:800;padding:10px 18px;border-radius:14px}
+
+/* por dentro */
+.dentro{background:linear-gradient(#fff,#f7f2fe)}
+.marquee{overflow:hidden;padding:12px 0 30px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.track{display:flex;gap:18px;width:max-content;animation:slide 70s linear infinite}
+.track img{width:clamp(210px,24vw,290px);height:auto;flex:0 0 auto;border-radius:16px;box-shadow:0 14px 30px rgba(47,43,61,.14);background:#fff}
+.marquee:hover .track{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(calc(-50% - 9px))}}
+@media(prefers-reduced-motion:reduce){.track{animation-duration:200s}}
+.hint{text-align:center;color:var(--muted);font-size:14px;font-weight:700}
+.anatomia{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}
+.ana{background:#fff;border-radius:16px;padding:16px;text-align:center;font-weight:800;font-size:15px}
+.ana span{display:block;font-size:26px;margin-bottom:4px}
+
+/* passos */
+.passos{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:p}
+.passo{background:#fff;border-radius:var(--r);padding:24px 20px;position:relative;border:2px solid #f1ecf7}
+.passo::before{counter-increment:p;content:counter(p);position:absolute;top:-16px;left:20px;width:36px;height:36px;border-radius:50%;background:var(--rosa);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px}
+.passo h3{font-size:20px;margin:8px 0 4px}
+.passo p{color:var(--muted);font-size:15.5px}
+
+/* bonus */
+.bonus{background:#fff}
+.bgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.bcard{border-radius:var(--r);padding:24px;display:flex;gap:18px;align-items:flex-start;position:relative}
+.bcard .em{font-size:44px;line-height:1;flex:0 0 auto}
+.bcard .lbl{font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;opacity:.75}
+.bcard h3{font-size:22px;margin:2px 0 6px}
+.bcard p{font-size:15.5px;color:#4d475f}
+.bcard .val{position:absolute;top:18px;right:18px;font-weight:800;font-size:14px;color:var(--muted);text-decoration:line-through}
+.bc1{background:var(--rosa-s)}.bc2{background:var(--lilas-s)}.bc3{background:var(--azul-s)}.bc4{background:var(--verde-s)}
+.bcard.super{grid-column:1/-1;border:3px solid var(--amarelo);background:#fff8e1}
+.super .lbl{color:#b47e00;opacity:1}
+
+/* planos */
+.pacote{display:block;width:100%;max-width:520px;height:auto;margin:-10px auto 36px;border-radius:26px;box-shadow:0 20px 50px rgba(47,43,61,.14)}
+.planos{background:linear-gradient(#f7f2fe,var(--creme))}
+.pgrid{display:grid;grid-template-columns:1fr 1.12fr;gap:22px;max-width:880px;margin:0 auto;align-items:stretch}
+.plano{background:#fff;border-radius:26px;padding:30px 26px;border:2px solid #ebe5f3;display:flex;flex-direction:column}
+.plano.top{border:3px solid var(--cta);box-shadow:0 20px 50px rgba(34,163,90,.15);position:relative}
+.plano .flag{position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:var(--cta);color:#fff;font-weight:800;font-size:13px;padding:6px 16px;border-radius:99px;white-space:nowrap;letter-spacing:.5px}
+.plano h3{font-size:26px;text-align:center}
+.plano .desc{text-align:center;color:var(--muted);font-size:15px;margin-bottom:16px}
+.plano ul{list-style:none;display:grid;gap:9px;margin-bottom:22px;font-size:15.5px}
+.plano li{display:flex;gap:9px}
+.plano li.ok::before{content:"✓";color:var(--verde);font-weight:800}
+.plano li.no{color:#b3adc0;text-decoration:line-through}
+.plano li.no::before{content:"✕";color:#cfc9da;font-weight:800}
+.price{text-align:center;margin:auto 0 18px}
+.price .de{color:var(--muted);text-decoration:line-through;font-weight:700}
+.price .por{font-family:"Baloo 2";font-size:56px;line-height:1;color:var(--ink)}
+.price .por small{font-size:24px}
+.price .x{font-size:14px;color:var(--muted);font-weight:700}
+.plano .btn{max-width:none;font-size:17px;padding:17px 18px}
+.btn.alt{background:#fff;color:var(--ink);border:2px solid #d9d2e6;box-shadow:0 4px 0 #d9d2e6}
+.lanc{text-align:center;margin-top:20px;font-weight:800;color:var(--rosa)}
+.pay{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:12px;font-size:14px;color:var(--muted);font-weight:700}
+
+/* popup */
+.pop{position:fixed;inset:0;background:rgba(37,33,47,.6);display:flex;align-items:center;justify-content:center;padding:18px;z-index:50;opacity:0;pointer-events:none;transition:opacity .2s}
+.pop.on{opacity:1;pointer-events:auto}
+.pop .box{background:#fff;border-radius:26px;max-width:440px;width:100%;padding:30px 24px 22px;text-align:center;position:relative;transform:scale(.94);transition:transform .2s;max-height:92vh;overflow:auto}
+.pop.on .box{transform:scale(1)}
+.pop .x{position:absolute;top:10px;right:14px;background:none;border:0;font-size:28px;color:var(--muted);cursor:pointer;line-height:1}
+.pop .alerta{display:inline-block;background:#fff1b8;color:#8a5a00;font-weight:800;font-size:13px;padding:6px 14px;border-radius:99px;margin-bottom:12px}
+.pop h3{font-size:30px;margin-bottom:8px}
+.pop p{color:var(--muted);margin-bottom:14px;font-size:16px}
+.pop ul{list-style:none;text-align:left;display:grid;gap:7px;margin:0 auto 16px;max-width:330px;font-size:15px;font-weight:700}
+.pop li::before{content:"✓ ";color:var(--verde);font-weight:800}
+.pop .de{color:var(--muted);text-decoration:line-through;font-weight:700}
+.pop .por{font-family:"Baloo 2";font-size:52px;line-height:1;margin-bottom:16px}
+.pop .por small{font-size:22px}
+.pop .btn{max-width:none;font-size:17px}
+.pop .nao{display:block;margin-top:14px;color:var(--muted);font-size:14px;font-weight:700;text-decoration:underline}
+
+/* garantia */
+.garantia{display:flex;gap:26px;align-items:center;background:#fff;border-radius:26px;padding:30px;border:2px solid #ebe5f3}
+.selo{flex:0 0 130px;height:130px;border-radius:50%;background:conic-gradient(var(--amarelo),#ffd866,var(--amarelo));display:flex;flex-direction:column;align-items:center;justify-content:center;color:#5b3e00;font-weight:800;box-shadow:inset 0 0 0 8px #fff3c4}
+.selo b{font-family:"Baloo 2";font-size:46px;line-height:.9}
+.garantia h3{font-size:26px;margin-bottom:6px}
+.garantia p{color:var(--muted)}
+
+/* faq */
+.faq details{background:#fff;border-radius:18px;margin-bottom:12px;border:2px solid #f1ecf7;overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:800;display:flex;justify-content:space-between;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--lilas);font-size:24px;line-height:1;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 22px 20px;color:var(--muted)}
+
+/* final */
+.final{background:var(--lilas);color:#fff;text-align:center}
+.final h2{color:#fff}
+.final p{opacity:.92;max-width:600px;margin:0 auto 28px;font-size:19px}
+
+footer{background:#25212f;color:#a8a2b8;font-size:14px;padding:36px 0;text-align:center}
+footer a{color:#d9d4e6}
+footer .links{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin:10px 0}
+footer .legal{font-size:12.5px;max-width:720px;margin:14px auto 0;opacity:.8}
+
+.cta-center{text-align:center;margin-top:38px}
+
+@media(max-width:860px){
+  
+  
+  
+  .dor-list,.bgrid,.pgrid{grid-template-columns:1fr}
+  .feat{grid-template-columns:1fr}
+  .passos{grid-template-columns:1fr 1fr;gap:26px 14px}
+  .anatomia{grid-template-columns:1fr 1fr}
+  .garantia{flex-direction:column;text-align:center}
+  .plano.top{order:-1}
+  section{padding:52px 0}
+  .btn{max-width:none}
+}
+@media(max-width:420px){.passos{grid-template-columns:1fr}.b1,.b2{font-size:12px;padding:8px 10px}.badge b{font-size:18px}}
+</style>
+</head>
+<body>
+
+<div class="topbar">📚 Alinhado à BNCC · Educação Infantil · Bebês de 0 a 1 ano e 6 meses</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap grid">
+    <div class="copy">
+      <span class="tag">🍼 Para professoras de berçário e creche</span>
+      <h1>Nunca mais entre no berçário <span class="hl">sem saber o que fazer</span> com os bebês.</h1>
+      <p class="lead">200 atividades prontas e alinhadas à BNCC, organizadas por faixa etária, com <span class="mark">checklist de observação que adianta o seu relatório</span>.</p>
+      <ul class="checks">
+        <li>Código BNCC e campo de experiência em cada ficha</li>
+        <li>Materiais simples que a creche já tem</li>
+        <li>Passo a passo curto: leia em 1 minuto e aplique</li>
+      </ul>
+      <a class="btn" href="#planos">QUERO O KIT BERÇÁRIO <small>Acesso imediato no seu e-mail</small></a>
+      <div class="safe"><span>🔒 Compra segura</span><span>⚡ Acesso imediato</span><span>🛡️ Garantia de 7 dias</span></div>
+    </div>
+    <img class="mock mockimg" src="img/mockup-hero.webp" alt="Kit Berçário em Ação no tablet, fichas impressas e caderno">
+  </div>
+</header>
+
+<!-- DORES -->
+<section class="dores">
+  <div class="wrap">
+    <h2>Você se reconhece em <span class="hl">alguma dessas situações?</span></h2>
+    <p class="sub">Se sim, o Kit Berçário em Ação foi feito para você.</p>
+    <div class="dor-list">
+      <div class="dor">Passa o domingo à noite procurando atividade para bebê no Pinterest</div>
+      <div class="dor">Acha atividade bonita, mas não sabe em qual código da BNCC ela se encaixa</div>
+      <div class="dor">Na hora de escrever o relatório, não lembra o que cada bebê fez no semestre</div>
+      <div class="dor">Repete sempre as mesmas brincadeiras porque não tem ideia nova</div>
+      <div class="dor">A coordenação pede planejamento com objetivo e você trava</div>
+      <div class="dor">Fica insegura se a atividade é adequada e segura para aquela idade</div>
+    </div>
+    <p class="ponte">Não é falta de vontade. É falta de um <span class="hl">material organizado</span> para a sua realidade.</p>
+  </div>
+</section>
+
+<!-- O QUE É -->
+<section>
+  <div class="wrap">
+    <h2>Conheça o <span class="hl">Kit Berçário em Ação</span></h2>
+    <p class="sub">Um banco de atividades pensado para a rotina real do berçário: muitos bebês, pouco tempo e muita cobrança.</p>
+    <div class="feat">
+      <div class="fcard"><div class="ic" style="background:var(--lilas-s)">📋</div><h3>Planejamento pronto</h3><p>Cada ficha traz o código BNCC e o campo de experiência. É só copiar para o seu plano semanal.</p></div>
+      <div class="fcard"><div class="ic" style="background:var(--rosa-s)">✍️</div><h3>Relatório adiantado</h3><p>Checklist de observação em cada atividade. Marque durante a semana e use na hora de escrever.</p></div>
+      <div class="fcard"><div class="ic" style="background:var(--azul-s)">🧺</div><h3>Zero gasto extra</h3><p>Garrafa PET, pano, cesto, colher de pau. Tudo o que já existe na creche ou em casa.</p></div>
+    </div>
+    <div class="faixas"><span class="faixa">0 a 6 meses</span><span class="faixa">6 a 12 meses</span><span class="faixa">12 a 18 meses</span></div>
+  </div>
+</section>
+
+<!-- POR DENTRO -->
+<section class="dentro">
+  <div class="wrap">
+    <h2>Veja o material <span class="hl">por dentro</span> 👀</h2>
+    <p class="sub">Fichas coloridas, fáceis de ler no celular e prontas para imprimir.</p>
+    </div>
+  <div class="marquee" aria-label="Páginas do material"><div class="track"><img src="img/mat-00.webp" alt="Página do Kit Berçário em Ação" loading="lazy"><img src="img/mat-01.webp" alt="Página do Kit Berçário em Ação" loading="lazy"><img src="img/mat-02.webp" alt="Página do Kit Berçário em Ação" loading="lazy"><img src="img/mat-03.webp" alt="Página do Kit Berçário em Ação" loading="lazy"><img src="img/mat-04.webp" alt="Página do Kit Berçário em Ação" loading="lazy"><img src="img/mat-05.webp" alt="Página do Kit Berçário em Ação" loading="lazy"><img src="img/mat-06.webp" alt="Página do Kit Berçário em Ação" loading="lazy"><img src="img/mat-07.webp" alt="Página do Kit Berçário em Ação" loading="lazy"><img src="img/mat-08.webp" alt="Página do Kit Berçário em Ação" loading="lazy"><img src="img/mat-09.webp" alt="Página do Kit Berçário em Ação" loading="lazy"><img src="img/mat-10.webp" alt="Página do Kit Berçário em Ação" loading="lazy"><img src="img/mat-11.webp" alt="Página do Kit Berçário em Ação" loading="lazy"><img src="img/mat-12.webp" alt="Página do Kit Berçário em Ação" loading="lazy"><img src="img/mat-00.webp" alt="" aria-hidden="true" loading="lazy"><img src="img/mat-01.webp" alt="" aria-hidden="true" loading="lazy"><img src="img/mat-02.webp" alt="" aria-hidden="true" loading="lazy"><img src="img/mat-03.webp" alt="" aria-hidden="true" loading="lazy"><img src="img/mat-04.webp" alt="" aria-hidden="true" loading="lazy"><img src="img/mat-05.webp" alt="" aria-hidden="true" loading="lazy"><img src="img/mat-06.webp" alt="" aria-hidden="true" loading="lazy"><img src="img/mat-07.webp" alt="" aria-hidden="true" loading="lazy"><img src="img/mat-08.webp" alt="" aria-hidden="true" loading="lazy"><img src="img/mat-09.webp" alt="" aria-hidden="true" loading="lazy"><img src="img/mat-10.webp" alt="" aria-hidden="true" loading="lazy"><img src="img/mat-11.webp" alt="" aria-hidden="true" loading="lazy"><img src="img/mat-12.webp" alt="" aria-hidden="true" loading="lazy"></div></div>
+</section>
+
+<!-- COMO USAR -->
+<section>
+  <div class="wrap">
+    <h2>Simples de usar <span class="hl">na correria</span></h2>
+    <p class="sub">Do celular ou impresso na pasta da sala.</p>
+    <div class="passos">
+      <div class="passo"><h3>Abra o kit</h3><p>Vá direto na faixa etária da sua turma.</p></div>
+      <div class="passo"><h3>Escolha a ficha</h3><p>Cada uma mostra o objetivo e o campo da BNCC.</p></div>
+      <div class="passo"><h3>Aplique</h3><p>Separe o material e siga o passo a passo.</p></div>
+      <div class="passo"><h3>Registre</h3><p>Marque o checklist e guarde para o relatório.</p></div>
+    </div>
+    <div class="cta-center"><a class="btn" href="#planos">QUERO MEU KIT AGORA</a></div>
+  </div>
+</section>
+
+<!-- BÔNUS -->
+<section class="bonus">
+  <div class="wrap">
+    <h2>Além das atividades, <span class="hl">você ainda leva:</span></h2>
+    <p class="sub">Bônus exclusivos do Plano Completo.</p>
+    <div class="bgrid">
+      <div class="bcard super"><div class="em">📝</div><div><div class="lbl">⭐ Super bônus</div><h3>80 Relatórios Descritivos Prontos para o Berçário</h3><p>Modelos de parágrafos por campo de experiência. Você adapta ao nome e às conquistas de cada bebê em minutos.</p></div><span class="val">R$ 37</span></div>
+      <div class="bcard bc1"><div class="em">🗓️</div><div><div class="lbl">Bônus 2</div><h3>Planejamento Semanal Editável</h3><p>Modelo de plano semanal com os campos da BNCC já organizados para o berçário.</p></div><span class="val">R$ 27</span></div>
+      <div class="bcard bc2"><div class="em">🖼️</div><div><div class="lbl">Bônus 3</div><h3>Rotina Visual do Berçário</h3><p>Cartazes ilustrados para a parede: chegada, lanche, soninho, troca e saída.</p></div><span class="val">R$ 27</span></div>
+      <div class="bcard bc3"><div class="em">🤱</div><div><div class="lbl">Bônus 4</div><h3>Guia da Adaptação Escolar</h3><p>Como conduzir as primeiras semanas e o que dizer para as famílias no início do ano.</p></div><span class="val">R$ 27</span></div>
+      <div class="bcard bc4"><div class="em">🎵</div><div><div class="lbl">Bônus 5</div><h3>Cantigas e Brincadeiras de Colo</h3><p>Cantigas populares com sugestão de gestos para cada momento da rotina.</p></div><span class="val">R$ 27</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANOS -->
+<section class="planos" id="planos">
+  <div class="wrap">
+    <h2>Escolha o <span class="hl">seu plano</span></h2>
+    <p class="sub">Pagamento único. Sem mensalidade.</p>
+    <img class="pacote" src="img/mockup-pacote.webp" alt="Todos os materiais do Plano Completo" loading="lazy">
+    <div class="pgrid">
+      <div class="plano">
+        <h3>Plano Básico</h3>
+        <p class="desc">Só as atividades</p>
+        <ul>
+          <li class="ok">200 fichas de atividades</li>
+          <li class="ok">Organizadas por faixa etária</li>
+          <li class="ok">Código BNCC em cada ficha</li>
+          <li class="no">80 Relatórios Descritivos Prontos</li>
+          <li class="no">Planejamento Semanal Editável</li>
+          <li class="no">Rotina Visual do Berçário</li>
+          <li class="no">Guia da Adaptação Escolar</li>
+          <li class="no">Cantigas e Brincadeiras de Colo</li>
+        </ul>
+        <div class="price"><div class="por"><small>R$</small>10<small>,00</small></div><div class="x">pagamento único</div></div>
+        <!-- TROQUE PELO LINK DO CHECKOUT BÁSICO -->
+        <a class="btn alt" href="#CHECKOUT-BASICO" id="abrir-upsell">Quero o Básico</a>
+      </div>
+      <div class="plano top">
+        <span class="flag">⭐ MAIS ESCOLHIDO</span>
+        <h3>Plano Completo</h3>
+        <p class="desc">Atividades + todos os bônus</p>
+        <ul>
+          <li class="ok"><b>200 fichas de atividades</b></li>
+          <li class="ok">Organizadas por faixa etária</li>
+          <li class="ok">Código BNCC em cada ficha</li>
+          <li class="ok"><b>80 Relatórios Descritivos Prontos</b></li>
+          <li class="ok">Planejamento Semanal Editável</li>
+          <li class="ok">Rotina Visual do Berçário</li>
+          <li class="ok">Guia da Adaptação Escolar</li>
+          <li class="ok">Cantigas e Brincadeiras de Colo</li>
+        </ul>
+        <div class="price"><div class="de">De R$ 197,00</div><div class="por"><small>R$</small>27<small>,90</small></div><div class="x">pagamento único · Pix ou cartão</div></div>
+        <!-- TROQUE PELO LINK DO CHECKOUT COMPLETO -->
+        <a class="btn" href="#CHECKOUT-COMPLETO">QUERO O COMPLETO</a>
+      </div>
+    </div>
+    <p class="lanc">🌱 Preço de lançamento</p>
+    <div class="pay"><span>💠 Pix</span><span>💳 Cartão</span><span>📧 Envio automático por e-mail</span><span>♾️ Acesso vitalício</span></div>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section style="padding-top:20px">
+  <div class="wrap narrow">
+    <div class="garantia">
+      <div class="selo"><b>7</b>DIAS</div>
+      <div><h3>Garantia incondicional de 7 dias</h3><p>Se o material não servir para você, por qualquer motivo, basta pedir o reembolso dentro de 7 dias. Você recebe 100% do valor de volta, sem perguntas.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap narrow">
+    <h2>Perguntas <span class="hl">frequentes</span></h2>
+    <p class="sub"></p>
+    <details><summary>Como recebo o material?</summary><p>Assim que o pagamento é confirmado, o acesso chega automaticamente no e-mail informado na compra. No Pix, a liberação costuma ser imediata.</p></details>
+    <details><summary>É material físico?</summary><p>Não. É um material digital em PDF. Você pode usar direto no celular ou imprimir quantas vezes quiser.</p></details>
+    <details><summary>As atividades são mesmo alinhadas à BNCC?</summary><p>Sim. Cada ficha indica o código do objetivo de aprendizagem e o campo de experiência da BNCC para bebês (0 a 1 ano e 6 meses).</p></details>
+    <details><summary>Serve para turmas de 1 ano e 6 meses em diante?</summary><p>O foco do kit são bebês de 0 a 1 ano e 6 meses. Algumas atividades podem ser adaptadas para o maternal, mas o material foi pensado para o berçário.</p></details>
+    <details><summary>Preciso comprar materiais caros?</summary><p>Não. As atividades usam itens simples como garrafa PET, pano, cesto, potes e objetos do dia a dia da creche.</p></details>
+    <details><summary>Mães também podem usar?</summary><p>Sim. As fichas são simples e funcionam em casa. Os bônus de relatório e planejamento são mais úteis para professoras.</p></details>
+    <details><summary>Qual a diferença entre os planos?</summary><p>O Básico tem só as fichas de atividades. O Completo inclui as fichas e os 5 bônus, como os 80 relatórios descritivos e o planejamento semanal editável.</p></details>
+    <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia incondicional. É só pedir o reembolso e devolvemos 100% do valor.</p></details>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final">
+  <div class="wrap narrow">
+    <h2>Sua próxima semana no berçário pode começar planejada.</h2>
+    <p>200 atividades prontas, alinhadas à BNCC, com o relatório adiantado. Por menos que um lanche.</p>
+    <a class="btn" href="#planos">QUERO O KIT BERÇÁRIO EM AÇÃO</a>
+  </div>
+</section>
+
+<div class="pop" id="upsell" role="dialog" aria-modal="true" aria-labelledby="up-tit">
+  <div class="box">
+    <button class="x" type="button" aria-label="Fechar">×</button>
+    <span class="alerta">⚠️ ESPERA! Oferta só nesta página</span>
+    <h3 id="up-tit">Leve o <span class="hl">Plano Premium</span> por só R$ 7,90 a mais</h3>
+    <p>Em vez de só as atividades, leve tudo do Plano Completo:</p>
+    <ul>
+      <li>200 fichas de atividades</li>
+      <li>80 Relatórios Descritivos Prontos</li>
+      <li>Planejamento Semanal Editável</li>
+      <li>Rotina Visual do Berçário</li>
+      <li>Guia da Adaptação Escolar</li>
+      <li>Cantigas e Brincadeiras de Colo</li>
+    </ul>
+    <div class="de">De R$ 27,90</div>
+    <div class="por"><small>R$</small>17<small>,90</small></div>
+    <!-- TROQUE PELO LINK DO CHECKOUT PREMIUM R$17,90 -->
+    <a class="btn" href="#CHECKOUT-PREMIUM-1790">SIM, QUERO O PREMIUM</a>
+    <!-- TROQUE PELO LINK DO CHECKOUT BÁSICO -->
+    <a class="nao" href="#CHECKOUT-BASICO">Não, quero só o Básico por R$ 10</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var pop=document.getElementById('upsell'), abrir=document.getElementById('abrir-upsell');
+  function on(e){e.preventDefault();pop.classList.add('on');pop.querySelector('.btn').focus()}
+  function off(){pop.classList.remove('on')}
+  abrir.addEventListener('click',on);
+  pop.querySelector('.x').addEventListener('click',off);
+  pop.addEventListener('click',function(e){if(e.target===pop)off()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')off()});
+})();
+</script>
+
+<footer>
+  <div class="wrap">
+    <strong style="color:#fff">Kit Berçário em Ação</strong>
+    <div class="links"><a href="#">Termos de uso</a><a href="#">Política de privacidade</a><a href="mailto:SEU-EMAIL@DOMINIO.COM">Contato</a></div>
+    <div>© 2026 Kit Berçário em Ação · CNPJ 00.000.000/0001-00</div>
+    <p class="legal">Este site não é afiliado ao Facebook, Meta ou ao Ministério da Educação. Produto digital entregue em formato PDF. As atividades devem ser sempre realizadas com supervisão de um adulto.</p>
+  </div>
+</footer>
+
+</body>
+</html>
